@@ -161,6 +161,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-./TransPath_data.zip
-./TransPath_data
-./TransPath_data_mini
+TransPath_data.zip
+TransPath_data
+TransPath_data_mini
