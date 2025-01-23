@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-data_names = ['maps', 'starts', 'goals', 'focal', 'cf', 'abs']
-data = {}
+maps1 = np.load('./TransPath_data/train/maps.npy', mmap_mode='c')
+maps2 = np.load('./TransPath_data/val/maps.npy', mmap_mode='c')
+maps3 = np.load('./TransPath_data/test/maps.npy', mmap_mode='c')
 
-for name in data_names:
-    data[name] = np.load(f'./TransPath_data/test/{name}.npy', mmap_mode='c')
-    plt.imshow(data[name][0][0])
-    plt.show()
+print(maps1.shape)
+print(maps2.shape)
+print(maps3.shape)
