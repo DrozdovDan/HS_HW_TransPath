@@ -15,7 +15,7 @@ for folder in folders:
     goals = np.expand_dims(data[..., 1] == 1, 1)
     focal = np.zeros_like(maps).astype(bool)
     cf = np.load(f'./{main_dir}/{folder}/cf.npy', mmap_mode='c')
-    cf = np.expand_dims(cf, 1)
+    cf = np.expand_dims(cf, 1) + goals
     abs = np.expand_dims(data[..., 2], 1)
 
     print(f'Start saving {folder}...')
